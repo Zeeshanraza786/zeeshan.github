@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      :root{
+        --hover(#ff0e00aa);
+      }
+      
+      body{
+        display: flex;
+        flex-flow: row wrap;
+        background: rgba(0,0,0,0.8);
+      }
+      
+      .box{
+        width: 100px;
+        height: 70px;
+        border: 1px solid #ff000075;
+        border-radius: 10px 0px;
+        margin: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 3px 15px black;
+        background: black;
+        transition: 0s;
+      }
+      
+      div > p{
+        color: white;
+        text-shadow: 0 0 10px white,0 0 20px white, 0 0 40px white , 0 0 50px white , 0 0 60px white, 0 0 70px white , 0 0 80px white; 
+      }
+      .box:hover{
+         box-shadow: 3px 3px 35px #ff0000a6,3px -3px 35px #ff0000a6,-3px 3px 35px #ff0000a6,-3px -3px 35px #ff0000a6;
+         border: 1px solid #ff0000;
+      }
+      
+      @media (min-width:800px)and(max-width:1024px){
+        .box{
+          width: 250px;
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="box1(),a.play()" class="box" id="box1"><p>1</p></div>
+    <div onclick="box2(),a.play()" class="box" id="box2"><p>2</p></div>
+    <div onclick="box3(),a.play()"class="box" id="box3"><p>3</p></div>
+    <div onclick="box4()"class="box" id="box1"><p>4</p></div>
+    <div onclick="box5(),a.play()"class="box" id="box2"><p>5</p></div>
+    <div onclick="box6(),a.play()"class="box" id="box3"><p>6</p></div>
+    <div onclick="box7(),a.play()"class="box" id="box4"><p>7</p></div>
+    <div onclick="box8(),a.play()"class="box" id="box5"><p>8</p></div>
+    <div onclick="box9(),a.play()"class="box" id="box1"><p>9</p></div>
+    <div onclick="box10(),a.play()"class="box" id="box2"><p>10</p></div>
+    <div onclick="box11(),a.play()"class="box" id="box3"><p>11</p></div>
+    <div onclick="box12(),a.play()"class="box" id="box4"><p>12</p></div>
+    <div onclick="box13(),a.play()"class="box" id="box5"><p>13</p></div>
+    <div onclick="box14(),a.play()"class="box" id="box1"><p>14</p></div>
+    <div onclick="box15(),a.play()"class="box" id="box2"><p>15</p></div>
+    <script type="text/javascript" charset="utf-8">
+    swal("Welcome Friend", "...please choose any one box 🥰🥰🥰");
+    
+    function box1(){
+      swal("😀😀😀😀","You are my friend only");
+    }
+    function box2(){
+      swal("💘💘💘💘","You are my love");
+    }
+    function box3(){
+      swal("😈😈😈😈","You are my enemy");
+    }
+    function box4(){
+      swal("❤️❤️❤️❤️","I am your love");
+    }
+    function box5(){
+      swal("👿👿👿👿","I am your enemy");
+    }
+    function box6(){
+      swal("💓💓💓💓","I am your best friend");
+    }
+    function box7(){
+      swal("🥰🥰🥰🥰","You are my best friend");
+    }
+    function box8(){
+      swal("💕💕💕💕","I am your close friend");
+    }
+    function box9(){
+      swal("💖💖💖💖","Your are my close friend");
+    }
+    function box10(){
+      swal("😏😏😏😏","Your are fake lover");
+    }
+    function box11(){
+      swal("😝😝😝😝"," I am your friend only");
+    }
+    function box12(){
+      swal("😔😔😔😔","I am fake lover");
+    }
+    function box13(){
+      swal("🤨🤨🤨🤨","I need ture lover");
+    }
+    function box14(){
+      swal("😩😩😩😩","I need true lover");
+    }
+    function box15(){
+      swal("😄😄😄😄","you are very crazy");
+    }
+      
+      let a = new Audio();
+      a.src = "audio.mp3";
+      
+    </script>
+  </body>
+</html>
